@@ -119,7 +119,7 @@ The similarity between individual plots (by year) and NVC communities are
 quantified by calculating the Jaccard similarity between the sample plots and
 pseudo-quadrats generated from the NVC floristic tables. This approach
 is noted as improving the accuracy of fit relative to the Czekanowski
-index for samples with low species richness \citep{tipping2013}.
+index for samples with low species richness [@tipping2013].
 
 \begin{equation}\label{eq:jaccard_similarity}
 j = \frac{a}{a + b + c}
