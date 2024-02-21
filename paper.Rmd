@@ -95,46 +95,13 @@ modules summarised in the following table.
 | MVA Local, unrestricted |                        Allows the user to explore the position of the sample plots in an ordination space.                        |
 |          Report         |                Provides the user with a downloadable report, containing user-selected outputs from the app session.               |
 
-# Key methodologies
 
-The core function of `MAVIS` is to compare the compositional similarity of a set of
-sample plots against GB NVC communities.
 
-To assess the similarity for grouped plots (by year) and all plots (by year) the 
-Czekanowski index, also known as the proportional similarity index is used.
-To use the Czekanowski index sample plot data is composed into floristic tables
-and compared against the NVC's florstic tables, or a subset thereof.
-Equation~\autoref{eq:czekanowski_index} outlines the 
-Czekanowski index, where $N_{ij}$ is the abundance of species $i$ in group $j$, 
-$N_{ik}$ is the abundance of species $i$ in group $k$, $p$ is the total number of 
-species in the samples.
-As floristic tables from user-inputted sample data tend to be less species-rich Following @malloch species absent from the survey data, but present in the NVC
-floristic tables at a constancy of 0.2 are down-weighted to 0.1.
+```{r screenshot, echo=FALSE, fig.cap="The MVA section of `MAVIS`, showing the trajectory of quadrat 10 from the Leith Hill Wood example dataset in the ordination spaces over time."}
+knitr::include_graphics("images/Screenshot from 2024-02-21 19-49-30.png") 
+``` 
 
-\begin{equation}\label{eq:czekanowski_index}
-C_{jk} = 2 \cdot \frac{\sum_{i=1}^{p} min(N_{ij}, N_{ik})}{\sum_{i=1}^{p} N_{ij} + \sum_{i=1}^{p} N_{ik}}
-\end{equation}
 
-The similarity between individual plots (by year) and NVC communities are 
-quantified by calculating the Jaccard similarity between the sample plots and
-pseudo-quadrats generated from the NVC floristic tables. This approach
-is noted as improving the accuracy of fit relative to the Czekanowski
-index for samples with low species richness [@tipping2013].
-
-\begin{equation}\label{eq:jaccard_similarity}
-j = \frac{a}{a + b + c}
-\end{equation}
-
-Equation~\autoref{eq:jaccard_similarity} . Where $a$, $b$, and $c$ represent the
-
-To generate the pseudo-quadrats.....
-
-The ordination spaces in the MVA modules are constructed using Detrended 
-Correspondence Analysis (DCA) [@hill1980] using the R package `vegan` 
-[@oksanen2023]. In the National Reference method
-
-For a more comprehensive description of the methodologies used please
-refer to the documentation bundled in `MAVIS` <ADD REF TO AVIS ZENODO REPO HERE>
 
 # Data sources
 
@@ -175,6 +142,14 @@ Four example datasets are bundled with `MAVIS`:
 3) Whitwell Common [@smart2000],
 and
 4) Newborough Warren [@wallace2018].
+
+# Conclusion
+
+`MAVIS` provides a web-based, easily accessible GUI for the assignment of
+vegetation sample plot data to GB NVC communities. `MAVIS` also provides a
+number of other exploratory analyses, which compliment the NVC assignment results
+
+We plan to maintain and improve `MAVIS`....
 
 # Funding
 
