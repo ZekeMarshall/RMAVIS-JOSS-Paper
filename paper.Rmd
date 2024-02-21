@@ -111,7 +111,7 @@ species in the samples.
 As floristic tables from user-inputted sample data tend to be less species-rich Following @malloch species absent from the survey data, but present in the NVC
 floristic tables at a constancy of 0.2 are down-weighted to 0.1.
 
-\begin{equation} \label{eq:czekanowski_index}
+\begin{equation}\label{eq:czekanowski_index}
 C_{jk} = 2 \cdot \frac{\sum_{i=1}^{p} min(N_{ij}, N_{ik})}{\sum_{i=1}^{p} N_{ij} + \sum_{i=1}^{p} N_{ik}}
 \end{equation}
 
@@ -121,7 +121,7 @@ pseudo-quadrats generated from the NVC floristic tables. This approach
 is noted as improving the accuracy of fit relative to the Czekanowski
 index for samples with low species richness \citep{tipping2013}.
 
-\begin{equation} \label{eq:jaccard_similarity}
+\begin{equation}\label{eq:jaccard_similarity}
 j = \frac{a}{a + b + c}
 \end{equation}
 
