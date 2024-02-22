@@ -60,13 +60,14 @@ community, namely the need to:
 1) accommodate updates to the NVC;
 2) provide a means to easily reproduce and attribute the results of the NVC
 assignment process;
-3) simplify access to and the use of NVC assignment software;
+3) broaden and simplify access through the provision of a web-based Graphical 
+User Interface (GUI);
 and
 4) facilitate the continuous development of such NVC assignment software.
 We developed `MAVIS` considering these needs, with the view to providing
 a reliable system for use by the GB ecology and conservation community, 
 analogous to the Engine for Relevés to Irish Communities Assignment (ERICA)
-tool [@perrin2018; @perrin2019a], developed for Ireland.
+tool [@perrin2018; @perrin2019a] developed for Ireland.
 
 # Application structure
 
@@ -90,15 +91,15 @@ modules summarised in the following table.
 |        Frequency        |                         Summarises the frequency of occurrence of each species across all plots over time.                        |
 |           EIVs          |         Displays the mean Hill-Ellenberg ecological indicator values (EIVs) for each plot, group of plots, and all plots.         |
 |        Diversity        |                              Displays a number of diversity metrics for each plot and group of plots.                             |
-|       MVA National      |                        Allows the user to explore the position of the sample plots in an ordination space.                        |
-|  MVA Local, restricted  |                        Allows the user to explore the position of the sample plots in an ordination space.                        |
-| MVA Local, unrestricted |                        Allows the user to explore the position of the sample plots in an ordination space.                        |
+|       MVA National      |                Constructs an ordination space using all NVC pseudo-quadrats, with sample plots added in passively.                |
+|  MVA Local, restricted  |     Constructs an ordination space using the top-fitted NVC communities pseudo-quadrats, with sample plots added in passively.    |
+| MVA Local, unrestricted |               Constructs an ordination space using the top-fitted NVC communities pseudo-quadrats and sample plots.               |
 |          Report         |                Provides the user with a downloadable report, containing user-selected outputs from the app session.               |
 
 
 
 <div class="figure">
-<img src="images/Screenshot from 2024-02-21 19-49-30.png" alt="The MVA section of `MAVIS`, showing the trajectory of quadrat 10 from the Leith Hill Wood example dataset in the ordination spaces over time." width="1923" />
+<img src="images/Screenshot from 2024-02-22 06-58-09.png" alt="The MVA section of `MAVIS`, showing the trajectory of quadrat 10 from the Leith Hill Wood example dataset in the ordination spaces over time." width="1923" />
 <p class="caption">The MVA section of `MAVIS`, showing the trajectory of quadrat 10 from the Leith Hill Wood example dataset in the ordination spaces over time.</p>
 </div>
 
@@ -106,6 +107,8 @@ modules summarised in the following table.
 
 # Data sources
 
+`MAVIS` depends on a number of individual datasets, which are bundled with the
+application, the sources of which are as follows.
 The list of accepted species was constructed using 
 the vascular plant (*Tracheophyta*) taxa present in the 
 Botanical Society of Britain and Ireland's (BSBI) database [@bsbi2022TaxonLists];
@@ -117,26 +120,23 @@ and hornwort (*Anthocerotophyta*) taxa present in the UKSI,
 retrieved from the National Biodiversity Network (NBN), filtered to include taxa 
 at the species, species aggregate, subspecies, species sensu lato, 
 and genus ranks.
-The limited number of lichen (*Lecanoromycetes*), charophyte (*Charophyta*), 
-and 'algae' taxa present in the NVC floristic tables.
-
+The limited number of lichen (*Lecanoromycetes*) and charophyte (*Charophyta*) 
+taxa, along with one unspecified 'algae' taxon present in the NVC floristic 
+tables.
 The NVC communities present in `MAVIS` are composed from @rodwell2000, 
 @wallace2017, and @prosser2023.
-
 Data for habitat correspondences is derived from: 
 the Joint Nature Conservation Committee (JNCC) Spreadsheet of Habitat 
 Correspondences [@jncc2008],
 UKHab V1.1 [@butcher2020], and
 the National Plant Monitoring Scheme (NPMS) habitat correspondences
 [@pescott2019].
-
 Data for the vascular plant Hill-Ellenberg values were retrieved from the
 BSBI checklists, specifically the Nitrogen Score (N)
 [@bsbi2017ellenbergN], Moisture Score (F) [@bsbi2017ellenbergF],
 Reaction Score (R) [@bsbi2017ellenbergR], Salinity Score (S)
-[@bsbi2017ellenbergS], and Light Score (L) [@bsbi2017ellenbergL]. Data
-for bryophytes was taken from BRYOATT [@hill2007].
-
+[@bsbi2017ellenbergS], and Light Score (L) [@bsbi2017ellenbergL]. 
+The corresponding data for bryophytes was taken from BRYOATT [@hill2007].
 Four example datasets are bundled with `MAVIS`: 
 1) Parsonage Down [@ridding2020],
 2) Leith Hill Place Wood [@wood2015; @smart2024],
@@ -147,10 +147,12 @@ and
 # Conclusion
 
 `MAVIS` provides a web-based, easily accessible GUI for the assignment of
-vegetation sample plot data to GB NVC communities. `MAVIS` also provides a
-number of other exploratory analyses, which compliment the NVC assignment results
-
-We plan to maintain and improve `MAVIS`....
+vegetation sample plot data to GB NVC communities. 
+`MAVIS` also provides a number of other exploratory analyses, 
+which compliment the NVC assignment results.
+We plan to maintain and improve the functionality found in v1.0 of `MAVIS` and
+hope that it acts as a useful tool for the GB ecology and conservation 
+community.
 
 # Funding
 
