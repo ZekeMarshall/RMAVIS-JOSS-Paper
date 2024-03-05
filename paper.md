@@ -1,5 +1,5 @@
 ---
-title: '`MAVIS` v1.0: a R Shiny application for the analysis of vegetation survey data and assignment to UK NVC communities.'
+title: '`RMAVIS` v1.0: a R Shiny application for the analysis of vegetation survey data and assignment to UK NVC communities.'
 tags:
   - Vegetation science
   - Classification
@@ -30,7 +30,7 @@ output:
   
 # Summary
 
-`MAVIS` is a R Shiny application for the assignment of vegetation sample
+`RMAVIS` is a R Shiny application for the assignment of vegetation sample
 plot data to British National Vegetation Classification (NVC) 
 communities [@rodwell2000].
 
@@ -64,7 +64,7 @@ assignment process;
 User Interface (GUI);
 and
 4) facilitate the continuous development of such NVC assignment software.
-We developed `MAVIS` considering these needs, with the view to providing
+We developed `RMAVIS` considering these needs, with the view to providing
 a reliable system for use by the GB ecology and conservation community, 
 analogous to the Engine for Relevés to Irish Communities Assignment (ERICA)
 tool [@perrin2018; @perrin2019a] developed for Ireland.
@@ -72,11 +72,11 @@ tool [@perrin2018; @perrin2019a] developed for Ireland.
 # Application structure
 
 Inspired by the extensible structure of the species niche and distribution 
-modelling `shiny` application `wallace` [@kass2023], we constructed `MAVIS` with 
+modelling `shiny` application `wallace` [@kass2023], we constructed `RMAVIS` with 
 a modular architecture, enabling both the easy maintenance of existing modules, 
 and easy development of additional modules in the future.
 
-`MAVIS` currently contains a total of eighteen modules, with the fourteen main 
+`RMAVIS` currently contains a total of eighteen modules, with the fourteen main 
 modules summarised in the following table.
 
 |        **Module**       |                                                          **Description**                                                          |
@@ -99,15 +99,15 @@ modules summarised in the following table.
 
 
 <div class="figure">
-<img src="images/Screenshot from 2024-02-22 06-58-09.png" alt="The MVA section of `MAVIS`, showing the trajectory of quadrat 10 from the Leith Hill Wood example dataset in the ordination spaces over time." width="1923" />
-<p class="caption">The MVA section of `MAVIS`, showing the trajectory of quadrat 10 from the Leith Hill Wood example dataset in the ordination spaces over time.</p>
+<img src="images/Screenshot from 2024-03-05 12-25-49.png" alt="The MVA section of `RMAVIS`, showing the trajectory of all sample plots from the Leith Hill Wood example dataset in the ordination spaces over time." width="1921" />
+<p class="caption">The MVA section of `RMAVIS`, showing the trajectory of all sample plots from the Leith Hill Wood example dataset in the ordination spaces over time.</p>
 </div>
 
 
 
 # Data sources
 
-`MAVIS` depends on a number of individual datasets, which are bundled with the
+`RMAVIS` depends on a number of individual datasets, which are bundled with the
 application, the sources of which are as follows.
 The list of accepted species was constructed using 
 the vascular plant (*Tracheophyta*) taxa present in the 
@@ -123,7 +123,7 @@ and genus ranks.
 The limited number of lichen (*Lecanoromycetes*) and charophyte (*Charophyta*) 
 taxa, along with one unspecified 'algae' taxon present in the NVC floristic 
 tables.
-The NVC communities present in `MAVIS` are composed from @rodwell2000, 
+The NVC communities present in `RMAVIS` are composed from @rodwell2000, 
 @wallace2017, and @prosser2023.
 Data for habitat correspondences is derived from: 
 the Joint Nature Conservation Committee (JNCC) Spreadsheet of Habitat 
@@ -137,7 +137,7 @@ BSBI checklists, specifically the Nitrogen Score (N)
 Reaction Score (R) [@bsbi2017ellenbergR], Salinity Score (S)
 [@bsbi2017ellenbergS], and Light Score (L) [@bsbi2017ellenbergL]. 
 The corresponding data for bryophytes was taken from BRYOATT [@hill2007].
-Four example datasets are bundled with `MAVIS`: 
+Four example datasets are bundled with `RMAVIS`: 
 1) Parsonage Down [@ridding2020],
 2) Leith Hill Place Wood [@wood2015; @smart2024],
 3) Whitwell Common [@smart2000],
@@ -146,11 +146,11 @@ and
 
 # Conclusion
 
-`MAVIS` provides a web-based, easily accessible GUI for the assignment of
+`RMAVIS` provides a web-based, easily accessible GUI for the assignment of
 vegetation sample plot data to GB NVC communities. 
-`MAVIS` also provides a number of other exploratory analyses, 
+`RMAVIS` also provides a number of other exploratory analyses, 
 which compliment the NVC assignment results.
-We plan to maintain and improve the functionality found in v1.0 of `MAVIS` and
+We plan to maintain and improve the functionality found in v1.0 of `RMAVIS` and
 hope that it acts as a useful tool for the GB ecology and conservation 
 community.
 
@@ -158,7 +158,7 @@ community.
 
 # Acknowledgements
 
-We would like to thank...for testing `MAVIS`.
+We would like to thank...for testing `RMAVIS`.
 
 We would also like to thank Laurence Jones for providing the Newborough
 Warren example dataset and Lucy Ridding for providing the Parsonage Down
